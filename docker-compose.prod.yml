@@ -1,0 +1,23 @@
+services:
+  fastapi:
+    container_name: glk-corpus-fastapi
+    build: ./backend
+    volumes:
+      - ./backend:/app
+      - ./data:/data
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    restart: unless-stopped
+  
+  nextjs:
+    container_name: glk-corpus-nextjs
+    build:
+      context: ./frontend
+      target: prod
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
