@@ -1,3 +1,4 @@
+name: glk-corpus-web
 services:
   fastapi:
     container_name: glk-corpus-fastapi

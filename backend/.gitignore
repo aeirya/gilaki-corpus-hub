@@ -1,0 +1,8 @@
+__pycache__/
+*.py[codz]
+lib/
+lib64/
+dist/
+build/
+.venv/
+
