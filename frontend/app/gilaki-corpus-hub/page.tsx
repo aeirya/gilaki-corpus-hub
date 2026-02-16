@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Header from "./components/Header";
-import VerbForm from "./components/VerbForm";
-import VerbList from "./components/VerbList";
-import ComparisonModal from "./components/ComparisonModal";
-import { useVerbs } from "./hooks/useVerbs";
-import SettingsBar from "./components/SettingsBar";
+import Header from "@/app/components/Header";
+import VerbForm from "@/app/components/VerbForm";
+import VerbList from "@/app/components/VerbList";
+import ComparisonModal from "@/app/components/ComparisonModal";
+import { useVerbs } from "@/app/hooks/useVerbs";
+import SettingsBar from "@/app/components/SettingsBar";
 import { Verb } from "@/app/types/verb"
 
 export default function Page() {

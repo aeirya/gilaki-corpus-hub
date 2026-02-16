@@ -14,12 +14,12 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/gilaki",
-        destination: "/",
-        permanent: false, // important
+        source: "/glk/:path*",
+        destination: "/gilaki-corpus-hub/:path*",
+        permanent: false,
       },
     ];
-  },
+  }
 };
 
 export default nextConfig;
